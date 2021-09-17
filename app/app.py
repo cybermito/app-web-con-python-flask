@@ -11,11 +11,11 @@ def index(): #Creamos un método que nos devolverá un texto en el navegador.
     return "Cybermito Web"
 """
 def index():
-    return "Bienvenidos a mi nueva aplicación"
+    return "Bienvenid@ a mi nueva aplicación"
 
 @app.route('/holamundo') #definimos una segunda ruta, para una segunda vista (página web)
 def hola_mundo(): #Definimos una segunda vista (página web), en estos casos solo devolvemos un texto plano.
-    return "Hola Mundo"
+    return "Hola Mundo, ¿eres un bot?"
 
 if __name__ == '__main__': #Comprobamos si vamos a lanzar la aplicación como principal.
     app.add_url_rule('/', view_func=index)#Esta es otra manera de crear una ruta, en el primer argumento
