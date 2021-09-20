@@ -18,6 +18,7 @@ def index():
     #Creamos un diccionario con los valores que queremos enviar a nuestra plantilla para que se rendericen
     data = {
         'titulo':'Página principal',
+        'cabecera':'Bienvenid@',
         'encabezado':'Bienvenid@ a mi nueva app'
     }
     return render_template('index.html', data=data)
