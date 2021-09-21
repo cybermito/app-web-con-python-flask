@@ -23,6 +23,16 @@ def index():
     }
     return render_template('index.html', data=data)
 
+@app.route('/contacto')
+def contacto():
+    data = {
+        'titulo':'Contacto',
+        'cabecera':'Contacto',
+        'encabezado':'Estamos en la sección de contacto'
+    }
+    return render_template('contacto.html', data=data)
+    
+
 # definimos una segunda ruta, para una segunda vista (página web)
 @app.route('/holamundo')
 # Definimos una segunda vista (página web), en estos casos solo devolvemos un texto plano.

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{data.titulo}}</title> <!-- recibimos los datos enviados por la vista que renderizará Jinja2 -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}"> <!-- Indicamos donde está ubicada la hoja de estilos -->
+    <!-- El primer argumento del método url_for es la carpeta de contenido de los recursos de la aplicacióm
+    el segundo argumento es el fichero/url con el recurso que vamos a cargar -->
+</head>
+<body>
+    {%block contenido %} 
+    {%endblock%}
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+</body>
+</html>
