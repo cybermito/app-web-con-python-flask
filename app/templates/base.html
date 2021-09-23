@@ -10,6 +10,9 @@
     el segundo argumento es el fichero/url con el recurso que vamos a cargar -->
 </head>
 <body>
+    <a href="{{url_for('index')}}">Inicio</a>
+    <a href="{{url_for('contacto')}}">Contacto</a>
+
     {%block contenido %} 
     {%endblock%}
     <script src="{{url_for('static', filename='js/index.js')}}"></script>
